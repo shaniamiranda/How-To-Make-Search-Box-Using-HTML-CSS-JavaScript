@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Google Search</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="hero">
+        <div id="searchBox">
+            <img src="./image/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+                id="googleIcon">
+            <input type="text" placeholder="Search Google or type a URL">
+            <img src="./image/Google_mic.svg.png" class="mic-icon">
+
+        </div>
+    </div>
+    <script>
+        var searchBox = document.getElementById("searchBox");
+        var googleIcon = document.getElementById("googleIcon");
+
+        googleIcon.onclick = function () {
+            searchBox.classList.toggle("active");
+        }
+    </script>
+</body>
